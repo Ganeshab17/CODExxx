@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="design\favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Contact form</title>
+  <style>
+    div a { color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    ;
+  }
+   .attribution{
+     text-align: center;
+   }
+  </style>
+  
+</head>
+<body>
+  <div class="form-container">
+    <div id="message-sent" class="message-sent" >
+        <span id="Mess"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+        </svg>Message Sent!</span>
+         <br><br><span id="Tq">Thanks for completing the form. We'll be in touch soon!</span> 
+    </div>
+  <div class="contact-form-container">
+    <form id="contactForm" onsubmit=" return validateForm()" >
+       <h2>Contact Us</h2>
+       <div class="Names">
+        <div class="form-group">
+            <label for="firstName">First Name *</label><br>
+            <input type="text" id="firstName" name="firstName">
+            <span class="error" id="firstNameError">This field is required</span>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name *</label><br>
+            <input type="text" id="lastName" name="lastName">
+            <span class="error" id="lastNameError">This field is required</span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address *</label><br>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError">Please enter a valid email address</span>
+        </div>
+      </div>
+        <div class="form-group">
+            <label>Query Type *</label>
+            <div class="Query">
+                <div id="Ge">
+                <input type="radio" id="generalEnquiry" name="queryType" value="General Enquiry">
+                <label for="generalEnquiry">General Enquiry</label>
+                </div>
+                <div id="Ge">
+                <input type="radio" id="supportRequest" name="queryType" value="Support Request">
+                <label for="supportRequest">Support Request</label>
+                </div>
+            </div>
+            <br><span class="error" id="queryTypeError">Please select a query type</span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message *</label><br>
+            <textarea id="message" name="message"></textarea>
+            <span class="error" id="messageError">This field is required</span>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">I consent to being contacted by the team *</label>
+            <span class="error" id="consentError">To submit this form, please consent to being contacted</span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Ganesh</a>.
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>

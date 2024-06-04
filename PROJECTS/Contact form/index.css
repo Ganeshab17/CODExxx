@@ -1,0 +1,221 @@
+body {
+    background-color: #e3f6e3;
+    height:50px;
+    height: 100vh;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#message-sent {
+    display:none;
+    position:relative;
+    left:110px;
+    background-color:hsl(185, 24%, 22%);
+    font-family:Karla;
+    font-size:15px;
+    color: #fff;
+    width:380px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 145px 0px -70px 0px;
+    
+    
+}
+
+#Tq{
+   margin-top:-20px;
+   color: hsl(185, 22%, 77%);
+}
+#Mess{
+    color:hsl(193, 27%, 90%);
+}
+svg{
+    position:relative;
+    right:7px;
+    top:3px;
+}
+
+
+
+.contact-form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 600px;
+    margin-top:70px
+   
+}
+ 
+   
+h2 {
+    font-family:Karla ;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-top:10px;
+}
+
+label{
+   font-family:Karla ;
+    font-size: 16px;
+}
+
+input[name="firstName"]
+{
+    width: 260px;
+    padding: 10px;
+    border: 1px solid #aba7a7;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right: 10px;
+}
+input[name="lastName"]
+{ width:260px;
+    padding: 10px;
+    border: 1px solid #aba7a7;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+
+input[type="email"]{
+    width:555px;
+    padding: 10px;
+    border: 1px solid #aba7a7;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+}
+
+textarea {
+    height:100px ;
+    width:490px;
+    margin:20px 0px 10px 0px;
+    border-radius:5px ;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+input[type="radio"]:checked {
+    accent-color:hsl(167, 73%, 27%) ;
+   
+}
+
+
+#Ge:hover{
+    background-color: hsl(145, 38%, 91%);
+    border-color:hsl(162, 32%, 61%) ;
+}
+#Ge{
+    padding: 10px;
+    border: 1px solid #aba7a7;
+    border-radius: 5px;
+    display:inline;
+    width:200px;
+   margin:20px 30px 30px 0px;
+    padding-right:50px;
+}
+#Ge label{
+    margin-right:60px;
+}
+.Query{
+    margin-top:20px;
+}
+
+.error {
+    display: none;
+    color: hsl(0, 66%, 54%);
+    font-family:Karla ;
+    font-size: 0.9em;
+    margin-top:10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+    margin-top:20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:Karla;
+}
+
+button:hover {
+    background-color: hsl(171, 83%, 14%);
+}
+input:hover{
+    border-color: hsl(165, 24%, 38%);
+    cursor:pointer;
+}
+textarea:hover{
+    border-color: hsl(165, 24%, 38%);
+    cursor:pointer;
+}
+.Query label:hover{
+    cursor:pointer;
+}
+.form-group input[type="checkbox"]{
+    accent-color:hsl(170, 80%, 25%) ;
+    margin-top: 10px;
+}
+@media screen and (max-width:600px)
+{
+    .contact-form-container
+    {
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    #contactForm h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #contactForm label {
+        font-size: 14px;
+    }
+    .Names{
+        display:flex;
+        flex-direction:column
+    }
+    .Names input[type="email"]{
+        width:50%;
+    }
+   
+    #contactForm .Query label {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    #Ge{
+        padding-top:2px;
+        padding-bottom: 2px;
+    }
+
+    #contactForm button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #contactForm .Query{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contactForm .Query label {
+        margin-bottom: 10px;
+    }
+}
