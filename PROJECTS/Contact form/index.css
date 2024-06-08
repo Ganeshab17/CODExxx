@@ -111,7 +111,9 @@ input[type="radio"]:checked {
     accent-color:hsl(167, 73%, 27%) ;
    
 }
-
+#Ge:has(input[type="radio"]:checked){
+        background-color: hsl(145, 38%, 91%) ;
+}
 
 #Ge:hover{
     background-color: hsl(145, 38%, 91%);
