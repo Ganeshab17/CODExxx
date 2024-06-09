@@ -174,7 +174,7 @@ textarea:hover{
     accent-color:hsl(170, 80%, 25%) ;
     margin-top: 10px;
 }
-@media screen and (max-width:375px)
+@media screen and (max-width:748px)
 {   
     .form-container{
       margin:0 auto;
@@ -218,12 +218,21 @@ textarea:hover{
         width:103%
     
     }
+    #Ge label{
+        position:relative;
+        bottom:2.5px;
+        left:30px
+    }
+    #Ge input[type="radio"]{
+        position:relative;
+        left:25px;
+    }
     textarea{
         max-width:350px;
     }
-   input[type="checkbox"] label{
+   .form-group  label[for="consent"]{
     position: relative;
-     bottom:20px;
+     bottom:2.5px;
    }
 
     #contactForm button {
