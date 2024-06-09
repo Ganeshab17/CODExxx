@@ -174,7 +174,7 @@ textarea:hover{
     accent-color:hsl(170, 80%, 25%) ;
     margin-top: 10px;
 }
-@media screen and (max-width:748px)
+@media screen and (max-width:600px)
 {   
     .form-container{
       margin:0 auto;
@@ -258,4 +258,5 @@ textarea:hover{
      left:50px;
      text-align: center;
 }
+
 }
